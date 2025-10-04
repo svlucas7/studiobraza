@@ -1,0 +1,126 @@
+/* ==========================================================================
+   FOOTER
+   ========================================================================== */
+
+.footer {
+  background: var(--color-black);
+}
+
+.footer__content {
+  display: flex;
+  flex-wrap: nowrap; /* tudo em uma linha */
+  gap: var(--spacing-3);
+  justify-content: flex-start;
+  align-items: center;
+  padding: var(--spacing-4) 0; /* mais compacto */
+  color: var(--color-gray-500);
+  font-size: var(--font-size-xs); /* ainda mais minimalista */
+  white-space: nowrap; /* impede quebra de linha */
+  overflow-x: auto; /* permite rolagem horizontal no mobile */
+  -webkit-overflow-scrolling: touch;
+  /* esconder barra de rolagem visual */
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: var(--color-gray-700) transparent; /* cor sutil */
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* IE/Edge antigo */
+}
+
+.footer__content::-webkit-scrollbar { height: 4px; }
+.footer__content::-webkit-scrollbar-track { background: transparent; }
+.footer__content::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.16); border-radius: 999px; }
+.footer__content::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.24); }
+
+.footer__content > * {
+  flex: 0 0 auto; /* evita que filhos quebrem */
+}
+
+.footer__content a {
+  color: var(--color-gray-500);
+  text-decoration: none;
+}
+
+.footer__content a:hover {
+  color: var(--color-gray-300);
+  text-decoration: none;
+}
+
+.footer__nav {
+  display: flex;
+  gap: 0; /* separadores cuidam do espaçamento */
+  flex-wrap: nowrap; /* uma linha */
+}
+
+/* Separadores entre links do nav */
+.footer__nav a + a::before {
+  content: '·'; /* alternativo: '|' */
+  color: var(--color-gray-700);
+  margin: 0 var(--spacing-2);
+}
+
+/* Separador entre bloco de info e o nav */
+.footer__content > div:first-child::after {
+  content: '·';
+  color: var(--color-gray-700);
+  margin: 0 var(--spacing-2);
+}
+/* Scroll arrows */
+.footer {
+  position: relative;
+}
+.footer__scroll-btn {
+  position: absolute;
+  bottom: calc(50% - 10px);
+  transform: translateY(50%);
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: rgba(255,255,255,0.08);
+  color: var(--color-white);
+  display: none; /* padrão: escondido */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0; /* só aparece no hover */
+  transition: background var(--transition-fast), opacity var(--transition-fast), transform var(--transition-fast);
+}
+.footer__scroll-btn:hover { background: rgba(255,255,255,0.12); }
+.footer__scroll-btn:active { transform: translateY(50%) scale(0.98); }
+.footer__scroll-btn--left { left: 8px; }
+.footer__scroll-btn--right { right: 8px; }
+
+/* Mostrar setas quando houver overflow */
+.footer--overflow .footer__scroll-btn { display: inline-flex; }
+.footer--overflow:hover .footer__scroll-btn { opacity: 0.85; }
+
+/* Fades nas bordas para indicar overflow de forma sutil */
+.footer::before,
+.footer::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  width: 40px;
+  pointer-events: none;
+  display: none;
+}
+.footer::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(0,0,0,0.9), rgba(0,0,0,0));
+}
+.footer::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(0,0,0,0.9), rgba(0,0,0,0));
+}
+.footer--overflow::before,
+.footer--overflow::after { display: block; }
+/* Responsivo: reduz tipografia e espaçamentos em telas pequenas sem quebrar linha */
+@media (max-width: 640px) {
+  .footer__content {
+    font-size: var(--font-size-xs);
+    gap: var(--spacing-2);
+    padding: var(--spacing-3) 0;
+  }
+  .footer__nav {
+    gap: var(--spacing-2);
+  }
+}

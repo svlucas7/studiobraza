@@ -1,0 +1,19 @@
+/* ==========================================================================
+   MAIN STYLESHEET - STUDIO BRAZA
+   ========================================================================== */
+
+/* Base Styles */
+@import url('./base/variables.css');
+@import url('./base/reset.css');
+@import url('./base/utilities.css');
+@import url('./base/animations.css');
+
+/* Components */
+@import url('./components/ui.css');
+
+/* Sections */
+@import url('./sections/header-hero.css');
+@import url('./sections/main-content.css');
+@import url('./sections/faq-cta.css');
+@import url('./sections/pricing.css');
+@import url('./sections/footer.css');

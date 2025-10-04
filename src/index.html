@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planos em EUR com pagamento via PayPal. Landing Pages estratégicas, rápidas e GDPR‑ready para o mercado europeu.">
+    <meta name="keywords" content="landing page, design, conversão, vendas, páginas estratégicas">
+    <meta name="author" content="Studio Braza">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://studiobraza.com">
+    <meta property="og:title" content="Studio Braza - Landing Pages que Transformam">
+    <meta property="og:description" content="Planos em EUR, pagamento via PayPal e entrega rápida. Landing Pages estratégicas, GDPR‑ready, prontas para escalar na Europa.">
+    <meta property="og:image" content="/assets/images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://studiobraza.com">
+    <meta property="twitter:title" content="Studio Braza - Landing Pages que Transformam">
+    <meta property="twitter:description" content="Planos em EUR, pagamento via PayPal e entrega rápida. Landing Pages estratégicas, GDPR‑ready, prontas para escalar na Europa.">
+    <meta property="twitter:image" content="/assets/images/og-image.jpg">
+    
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress" aria-hidden="true"></div>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-spinner"></div>
+    </div>
+
+            <!-- Cookie Consent Banner (CMP) -->
+            <div id="cmp-banner" class="cmp-banner" role="dialog" aria-live="polite" aria-label="Consentimento de cookies" hidden>
+                <div class="cmp-banner__inner">
+                    <div class="cmp-banner__text">
+                        <p class="cmp-banner__title">Usamos cookies para melhorar sua experiência</p>
+                        <p class="cmp-banner__desc">Utilizamos cookies essenciais, e com o seu consentimento ativamos cookies de análise e publicidade. Veja a nossa <a class="cmp-link" href="/legal/cookies.html" target="_blank" rel="noopener">Política de Cookies</a> e <a class="cmp-link" href="/legal/privacy.html" target="_blank" rel="noopener">Privacidade</a>.</p>
+                    </div>
+                    <div class="cmp-banner__actions">
+                        <button class="cmp-btn cmp-btn--ghost" data-cmp="reject-all">Rejeitar tudo</button>
+                        <button class="cmp-btn cmp-btn--primary" data-cmp="accept-all">Aceitar tudo</button>
+                    </div>
+                </div>
+            </div>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Navegação principal">
+            <div class="container">
+                <div class="nav__content">
+                    <div class="nav__logo">
+                        <img src="/assets/images/studio-braza-logo-white.svg" alt="Studio Braza" class="nav__logo-img" width="140" height="32">
+                    </div>
+                    <button class="nav__toggle" aria-label="Abrir menu" aria-expanded="false">
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                        <span class="nav__toggle-line"></span>
+                    </button>
+                    <ul class="nav__menu">
+                        <li class="nav__item"><a href="#home" class="nav__link">Início</a></li>
+                        <li class="nav__item"><a href="#sobre" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#servicos" class="nav__link">Serviços</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
+                        <li class="nav__item"><a href="#processo" class="nav__link">Processo</a></li>
+                        <li class="nav__item"><a href="#planos" class="nav__link">Planos</a></li>
+                        <li class="nav__item"><a href="#planos" class="nav__link btn btn--primary">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero__content">
+                    
+                    <h1 class="hero__title js-reveal" data-aos="fade-up" data-aos-delay="200">
+                        <span class="hero__title-highlight">Páginas que convertem</span>
+                        <span class="hero__type js-typewriter" data-type-text="do clique à venda">do clique à venda</span>
+                    </h1>
+                    
+                    <p class="hero__description" data-aos="fade-up" data-aos-delay="400">
+                        Você investe em tráfego, mas as vendas não acontecem? Criamos landing pages que convertem de verdade. Pagamento via PayPal em EUR, entrega em até 7 dias e 100% adaptado para o mercado europeu.
+                    </p>
+                    
+                    <div class="hero__cta" data-aos="fade-up" data-aos-delay="600">
+                        <a class="btn btn--primary btn--large btn--magnetic" href="#planos">
+                            Ver planos
+                        </a>
+                    </div>
+                                        <div class="trust-bar" data-aos="fade-up" data-aos-delay="700">
+                                            <span>Pagamento via PayPal</span>
+                                            <span>•</span>
+                                            <span>Fatura internacional (sem VAT UE)</span>
+                                            <span>•</span>
+                                            <span>Atendimento PT/EN</span>
+                                            <span>•</span>
+                                            <span>Entrega em 3–7 dias</span>
+                                        </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="planos" class="pricing">
+            <div class="container">
+                <div class="pricing__header" data-aos="fade-up">
+                    <h2 class="pricing__title js-reveal">Escolha um pacote e comece hoje</h2>
+                    <p class="pricing__subtitle">Preços em EUR. Pagamento seguro via PayPal e início imediato do projeto.</p>
+                </div>
+
+                <div class="pricing__grid">
+                    <!-- Starter Plan -->
+                    <article class="pricing-card" data-aos="fade-up">
+                        <header class="pricing-card__header">
+                            <h3 class="pricing-card__name">Essencial</h3>
+                            <p class="pricing-card__tagline">Para validar sua oferta com rapidez</p>
+                        </header>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">€</span>
+                            <span class="pricing-card__amount">490</span>
+                            <span class="pricing-card__suffix">pagamento único</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>Landing Page de alta conversão</li>
+                            <li>Copywriting persuasivo (PT)</li>
+                            <li>Implementação no Elementor</li>
+                            <li>GDPR‑ready (cookies e políticas)</li>
+                            <li>Entrega rápida: 3–5 dias úteis</li>
+                        </ul>
+                        <div class="pricing-card__actions">
+                            <a class="btn btn--secondary btn--full-width" href="#checkout-essencial" data-plan="essencial">Comprar agora</a>
+                        </div>
+                    </article>
+
+                    <!-- Popular Plan -->
+                    <article class="pricing-card pricing-card--featured" data-aos="fade-up" data-aos-delay="100">
+                        <div class="pricing-card__badge">Mais vendido</div>
+                        <header class="pricing-card__header">
+                            <h3 class="pricing-card__name">Performance</h3>
+                            <p class="pricing-card__tagline">Tudo pronto para escalar</p>
+                        </header>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">€</span>
+                            <span class="pricing-card__amount">790</span>
+                            <span class="pricing-card__suffix">pagamento único</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>Tudo do Essencial</li>
+                            <li>Versão multilíngue (PT/EN) opcional</li>
+                            <li>Integrações (CRM, e-mail, pixels)</li>
+                            <li>Core Web Vitals + SEO base</li>
+                            <li>2 rodadas de ajustes</li>
+                        </ul>
+                        <div class="pricing-card__actions">
+                            <a class="btn btn--primary btn--full-width btn--magnetic" href="#checkout-performance" data-plan="performance">Comprar agora</a>
+                            <p class="pricing-card__note">Inicie hoje, sem fricção</p>
+                        </div>
+                    </article>
+
+                    <!-- Pro Plan -->
+                    <article class="pricing-card" data-aos="fade-up" data-aos-delay="200">
+                        <header class="pricing-card__header">
+                            <h3 class="pricing-card__name">Pro</h3>
+                            <p class="pricing-card__tagline">Para quem quer diferenciação total</p>
+                        </header>
+                        <div class="pricing-card__price">
+                            <span class="pricing-card__currency">€</span>
+                            <span class="pricing-card__amount">1.290</span>
+                            <span class="pricing-card__suffix">pagamento único</span>
+                        </div>
+                        <ul class="pricing-card__features">
+                            <li>Design exclusivo de alto impacto</li>
+                            <li>Copy premium com pesquisa rápida</li>
+                            <li>Integrações avançadas e automações</li>
+                            <li>Teste A/B do CTA principal</li>
+                            <li>Fatura com VAT + suporte 15 dias</li>
+                        </ul>
+                        <div class="pricing-card__actions">
+                            <a class="btn btn--secondary btn--full-width" href="#checkout-pro" data-plan="pro">Comprar agora</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="pricing__faq" data-aos="fade-up">
+                    <p class="pricing__legal">Preços em EUR. Pagamento 100% seguro via PayPal. Faturação internacional (sem VAT da UE). Início do projeto em até 24h úteis após confirmação.</p>
+                    <p class="pricing__reassure">Após a compra, você recebe a confirmação por e‑mail e o link do briefing. Em seguida, abrimos um canal direto no WhatsApp para acompanhamento.</p>
+                    <div class="pricing__mini-faq">
+                      <p class="pricing__mini-faq-item"><strong>Como pago?</strong> Via PayPal, em EUR. Simples e seguro.</p>
+                      <p class="pricing__mini-faq-item"><strong>E a fatura?</strong> Emitimos fatura internacional com seus dados (sem VAT da UE).</p>
+                      <p class="pricing__mini-faq-item"><strong>Quando começa?</strong> Em até 24h úteis após a confirmação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="testimonials__content">
+                    <div class="section-divider"></div>
+                    <h2 class="testimonials__label">O que dizem nossos clientes</h2>
+                    
+                    <blockquote class="testimonial" data-aos="fade-up">
+                        <div class="testimonial__quote-icon">
+                            <svg width="46" height="34" viewBox="0 0 46 34" fill="none">
+                                <path d="M46 0C45.1761 3.51564 44.3065 7.30884 43.391 11.3796C42.4756 15.4503 41.6517 19.4286 40.9194 23.3143C40.1871 27.2 39.592 30.7619 39.1343 34H26.0896L25.1284 32.4735C25.9522 29.2354 27.005 25.766 28.2866 22.0653C29.5682 18.2721 30.9871 14.4789 32.5433 10.6857C34.0995 6.89252 35.61 3.33061 37.0746 0H46ZM20.597 0C19.7731 3.51564 18.9035 7.30884 17.9881 11.3796C17.0726 15.4503 16.2488 19.4286 15.5164 23.3143C14.7841 27.2 14.1891 30.7619 13.7313 34H0.823881L0 32.4735C0.823881 29.2354 1.87662 25.766 3.15821 22.0653C4.4398 18.2721 5.81294 14.4789 7.27761 10.6857C8.83383 6.89252 10.3443 3.33061 11.809 0H20.597Z" fill="#6C6C6C"/>
+                            </svg>
+                        </div>
+                        <p class="testimonial__text">
+                            Ter o Lucas e sua equipe na nossa operação <strong>elevou significativamente o nível das nossas vendas e da comunicação com o nosso ICP.</strong> O trabalho que entregam é não apenas visualmente impecável, com sites, criativos e áreas de membros de altíssimo padrão, mas também profundamente alinhado com o nosso público. A identidade visual é pensada estrategicamente para falar a linguagem do nosso cliente ideal. Além disso, o time é extremamente flexível e colaborativo: <strong>escutam nossas ideias, adaptam-se às necessidades de testes rápidos e ainda contribuem com sugestões valiosas</strong> que, muitas vezes, trouxeram ganhos concretos para o negócio.
+                        </p>
+                        <footer class="testimonial__author">
+                            <img src="/assets/images/tamara.webp" alt="Tamara Jardim" class="testimonial__author-img" width="60" height="60">
+                            <div class="testimonial__author-info">
+                                <cite class="testimonial__author-name">Tamara Jardim</cite>
+                                <p class="testimonial__author-role">CoFounder & CTO — POD Academy</p>
+                            </div>
+                        </footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="about__content">
+                    <div class="about__text" data-aos="fade-right">
+                        <h2 class="about__title">
+                            <span class="about__title-black">Não é só sobre estar online.</span>
+                            <span class="about__title-highlighted">É sobre vender.</span>
+                        </h2>
+                        <div class="about__description">
+                            <p>Investir em tráfego sem uma página que converte é desperdiçar orçamento — especialmente em mercados competitivos da Europa.</p>
+                            <p>Escolha um plano, pague em EUR via PayPal e receba uma Landing Page estratégica, rápida, GDPR‑ready e pronta para vender.</p>
+                        </div>
+                        <div class="about__cta">
+                            <a class="btn btn--primary" href="#planos">Ver planos</a>
+                        </div>
+                    </div>
+                    <div class="about__visual" data-aos="fade-left">
+                        <img src="/assets/images/laptop.webp" alt="Laptop com landing page" class="about__image" width="800" height="600">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicos" class="services">
+            <div class="container">
+                <h2 class="services__title js-reveal" data-aos="fade-up">Feito para performar na Europa</h2>
+                
+                <div class="services__grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="service-card__title">Compliance & GDPR‑ready</h3>
+                        <p class="service-card__description">
+                            Cookies, políticas e fluxos pensados para conformidade e confiança.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="service-card__title">Multilíngue (PT/EN)</h3>
+                        <p class="service-card__description">
+                            Mensagem ajustada ao seu ICP com opção de versão em inglês.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="service-card__title">Core Web Vitals</h3>
+                        <p class="service-card__description">
+                            Performance sólida para SEO e melhor ROI em tráfego pago.
+                        </p>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <h3 class="service-card__title">Rastreamento para Ads</h3>
+                        <p class="service-card__description">
+                            Pixels e eventos (Google/Meta) para medir e otimizar.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio">
+            <div class="container">
+                <h2 class="portfolio__title js-reveal" data-aos="fade-up">
+                    Páginas que já escalaram negócios reais
+                </h2>
+                
+                <div class="portfolio__grid">
+                    <div class="portfolio__item" data-aos="fade-in">
+                        <img src="/assets/images/01.webp" alt="Landing Page - Projeto 1" class="portfolio__image" width="400" height="300">
+                    </div>
+                    <div class="portfolio__item" data-aos="fade-in" data-aos-delay="100">
+                        <img src="/assets/images/02.webp" alt="Landing Page - Projeto 2" class="portfolio__image" width="400" height="300">
+                    </div>
+                    <div class="portfolio__item" data-aos="fade-in" data-aos-delay="200">
+                        <img src="/assets/images/03.webp" alt="Landing Page - Projeto 3" class="portfolio__image" width="400" height="300">
+                    </div>
+                    <div class="portfolio__item" data-aos="fade-in" data-aos-delay="300">
+                        <img src="/assets/images/04.webp" alt="Landing Page - Projeto 4" class="portfolio__image" width="400" height="300">
+                    </div>
+                    <div class="portfolio__item" data-aos="fade-in" data-aos-delay="400">
+                        <img src="/assets/images/05.webp" alt="Landing Page - Projeto 5" class="portfolio__image" width="400" height="300">
+                    </div>
+                    <div class="portfolio__item" data-aos="fade-in" data-aos-delay="500">
+                        <img src="/assets/images/06.webp" alt="Landing Page - Projeto 6" class="portfolio__image" width="400" height="300">
+                    </div>
+                </div>
+                
+                <div class="portfolio__cta" data-aos="fade-up">
+                    <a class="btn btn--primary" href="#planos">Ver planos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Process Section -->
+        <section id="processo" class="process">
+            <div class="container">
+                <div class="process__header" data-aos="fade-up">
+                    <h2 class="process__title js-reveal">Como funciona</h2>
+                    <p class="process__description">
+                        Criar algo único exige método, mas sem complicação. Nosso processo é simples, colaborativo e garante clareza em cada etapa.
+                    </p>
+                </div>
+                
+                <div class="process__steps">
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="100">
+                        <div class="process-step__number">01</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Alinhamento inicial</h3>
+                            <ul class="process-step__list">
+                                <li>Definimos objetivos e expectativas do projeto.</li>
+                                <li>Criamos um canal direto no WhatsApp.</li>
+                                <li>Ajustamos a visão estratégica de partida.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="200">
+                        <div class="process-step__number">02</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Estratégia definida</h3>
+                            <ul class="process-step__list">
+                                <li>Compra do pacote via PayPal (seguro e imediato).</li>
+                                <li>Coletamos informações essenciais no briefing.</li>
+                                <li>Definimos referências visuais e alinhamos a identidade.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+                        <div class="process-step__number">03</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Criação e ajustes</h3>
+                            <ul class="process-step__list">
+                                <li>Criamos o design da sua Landing Page.</li>
+                                <li>Apresentamos, coletamos feedback e aplicamos ajustes.</li>
+                                <li>Implementação da página no Elementor.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="process-step" data-aos="fade-up" data-aos-delay="400">
+                        <div class="process-step__number">04</div>
+                        <div class="process-step__content">
+                            <h3 class="process-step__title">Pronto para vender</h3>
+                            <ul class="process-step__list">
+                                <li>Publicação e testes finais em todos os dispositivos.</li>
+                                <li>Garantimos performance, SEO base e usabilidade.</li>
+                                <li>Bônus: manual para pequenas alterações na sua Landing Page.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq">
+            <div class="container">
+                <div class="faq__header" data-aos="fade-up">
+                    <h2 class="faq__title js-reveal">
+                        <span class="faq__title-black">As dúvidas que você nem sabia que tinha</span><br>
+                        <span class="faq__title-highlighted">mas nós já conhecemos</span>
+                    </h2>
+                </div>
+                
+                <div class="faq__list" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-item">
+                        <button class="faq-item__trigger" aria-expanded="false">
+                            <span class="faq-item__label">//00</span>
+                            <span class="faq-item__question">Vocês não estão na UE. Consigo comprar e receber fatura?</span>
+                            <span class="faq-item__icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                    <rect width="50" height="50" rx="25" fill="white"/>
+                                    <path class="faq-item__icon-plus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H25.75V36C25.75 36.1989 25.671 36.3897 25.5303 36.5303C25.3897 36.671 25.1989 36.75 25 36.75C24.8011 36.75 24.6103 36.671 24.4697 36.5303C24.329 36.3897 24.25 36.1989 24.25 36V25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H24.25V14C24.25 13.8011 24.329 13.6103 24.4697 13.4697C24.6103 13.329 24.8011 13.25 25 13.25C25.1989 13.25 25.3897 13.329 25.5303 13.4697C25.671 13.6103 25.75 13.8011 25.75 14V24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                    <path class="faq-item__icon-minus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Sim. Somos estabelecidos no Brasil e emitimos fatura internacional em EUR, sem VAT da UE. Os seus dados (empresa, morada, VAT do cliente se houver) constam no documento. O pagamento é processado com segurança via PayPal.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-item__trigger" aria-expanded="false">
+                            <span class="faq-item__label">//01</span>
+                            <span class="faq-item__question">Qual é o prazo médio para entrega de um projeto?</span>
+                            <span class="faq-item__icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                    <rect width="50" height="50" rx="25" fill="white"/>
+                                    <path class="faq-item__icon-plus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H25.75V36C25.75 36.1989 25.671 36.3897 25.5303 36.5303C25.3897 36.671 25.1989 36.75 25 36.75C24.8011 36.75 24.6103 36.671 24.4697 36.5303C24.329 36.3897 24.25 36.1989 24.25 36V25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H24.25V14C24.25 13.8011 24.329 13.6103 24.4697 13.4697C24.6103 13.329 24.8011 13.25 25 13.25C25.1989 13.25 25.3897 13.329 25.5303 13.4697C25.671 13.6103 25.75 13.8011 25.75 14V24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                    <path class="faq-item__icon-minus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>O prazo depende do projeto. Landing Pages e websites variam entre 3 e 7 dias. Definiremos um cronograma claro no primeiro contato.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-item__trigger" aria-expanded="false">
+                            <span class="faq-item__label">//02</span>
+                            <span class="faq-item__question">Como funciona o pagamento?</span>
+                            <span class="faq-item__icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                    <rect width="50" height="50" rx="25" fill="white"/>
+                                    <path class="faq-item__icon-plus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H25.75V36C25.75 36.1989 25.671 36.3897 25.5303 36.5303C25.3897 36.671 25.1989 36.75 25 36.75C24.8011 36.75 24.6103 36.671 24.4697 36.5303C24.329 36.3897 24.25 36.1989 24.25 36V25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H24.25V14C24.25 13.8011 24.329 13.6103 24.4697 13.4697C24.6103 13.329 24.8011 13.25 25 13.25C25.1989 13.25 25.3897 13.329 25.5303 13.4697C25.671 13.6103 25.75 13.8011 25.75 14V24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                    <path class="faq-item__icon-minus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Pagamento 100% online e seguro via PayPal, em EUR. Para empresas, emitimos fatura internacional com os seus dados.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-item__trigger" aria-expanded="false">
+                            <span class="faq-item__label">//03</span>
+                            <span class="faq-item__question">Quantas rodadas de revisão estão incluídas no projeto?</span>
+                            <span class="faq-item__icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                    <rect width="50" height="50" rx="25" fill="white"/>
+                                    <path class="faq-item__icon-plus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H25.75V36C25.75 36.1989 25.671 36.3897 25.5303 36.5303C25.3897 36.671 25.1989 36.75 25 36.75C24.8011 36.75 24.6103 36.671 24.4697 36.5303C24.329 36.3897 24.25 36.1989 24.25 36V25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H24.25V14C24.25 13.8011 24.329 13.6103 24.4697 13.4697C24.6103 13.329 24.8011 13.25 25 13.25C25.1989 13.25 25.3897 13.329 25.5303 13.4697C25.671 13.6103 25.75 13.8011 25.75 14V24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                    <path class="faq-item__icon-minus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>O número de revisões varia conforme o serviço contratado, mas geralmente com um briefing bem respondido são necessárias poucas rodadas de ajustes. Garantimos que o projeto fique 100% alinhado às suas expectativas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-item__trigger" aria-expanded="false">
+                            <span class="faq-item__label">//04</span>
+                            <span class="faq-item__question">Como funciona o suporte após a entrega do projeto?</span>
+                            <span class="faq-item__icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                    <rect width="50" height="50" rx="25" fill="white"/>
+                                    <path class="faq-item__icon-plus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H25.75V36C25.75 36.1989 25.671 36.3897 25.5303 36.5303C25.3897 36.671 25.1989 36.75 25 36.75C24.8011 36.75 24.6103 36.671 24.4697 36.5303C24.329 36.3897 24.25 36.1989 24.25 36V25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H24.25V14C24.25 13.8011 24.329 13.6103 24.4697 13.4697C24.6103 13.329 24.8011 13.25 25 13.25C25.1989 13.25 25.3897 13.329 25.5303 13.4697C25.671 13.6103 25.75 13.8011 25.75 14V24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                    <path class="faq-item__icon-minus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Após a entrega, oferecemos 15 dias de suporte gratuito para ajustes técnicos simples. Caso precise de manutenção contínua, podemos discutir um plano de suporte mensal.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-item__trigger" aria-expanded="false">
+                            <span class="faq-item__label">//05</span>
+                            <span class="faq-item__question">Trabalha apenas como freelancer ou também em contratos mensais?</span>
+                            <span class="faq-item__icon">
+                                <svg width="50" height="50" viewBox="0 0 50 50" fill="none">
+                                    <rect width="50" height="50" rx="25" fill="white"/>
+                                    <path class="faq-item__icon-plus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H25.75V36C25.75 36.1989 25.671 36.3897 25.5303 36.5303C25.3897 36.671 25.1989 36.75 25 36.75C24.8011 36.75 24.6103 36.671 24.4697 36.5303C24.329 36.3897 24.25 36.1989 24.25 36V25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H24.25V14C24.25 13.8011 24.329 13.6103 24.4697 13.4697C24.6103 13.329 24.8011 13.25 25 13.25C25.1989 13.25 25.3897 13.329 25.5303 13.4697C25.671 13.6103 25.75 13.8011 25.75 14V24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                    <path class="faq-item__icon-minus" d="M36.75 25C36.75 25.1989 36.671 25.3897 36.5303 25.5303C36.3897 25.671 36.1989 25.75 36 25.75H14C13.8011 25.75 13.6103 25.671 13.4697 25.5303C13.329 25.3897 13.25 25.1989 13.25 25C13.25 24.8011 13.329 24.6103 13.4697 24.4697C13.6103 24.329 13.8011 24.25 14 24.25H36C36.1989 24.25 36.3897 24.329 36.5303 24.4697C36.671 24.6103 36.75 24.8011 36.75 25Z" fill="#7F7F7F"/>
+                                </svg>
+                            </span>
+                        </button>
+                        <div class="faq-item__content">
+                            <p>Atuamos das duas maneiras: oferecendo projetos sob demanda e com a modalidade de design por assinatura. Para clientes que precisam de design recorrente, estruturamos um contrato mensal para garantir entregas contínuas e suporte dedicado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__content">
+                    <div class="cta__brand">
+                        <img src="/assets/images/studio-braza-logo-white.svg" alt="Studio Braza" class="cta__logo" width="200" height="56">
+                        <p class="cta__label">// Disponível para projetos</p>
+                    </div>
+                    
+                    <h2 class="cta__title js-reveal" data-aos="fade-up">
+                        <span class="cta__title-highlight">Pare de desperdiçar tráfego pago na Europa</span><br>
+                        com uma página que não converte.
+                    </h2>
+                    
+                    <div class="cta__button" data-aos="fade-up" data-aos-delay="200">
+                        <a class="btn btn--primary btn--large btn--magnetic" href="#planos">
+                            Quero minha Landing Page
+                        </a>
+                    </div>
+                    
+                    <p class="cta__copyright">© 2025 // Studio Braza</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+        <!-- Footer with legal and manage consent -->
+            <footer class="footer" role="contentinfo">
+            <div class="container">
+                <div class="footer__content">
+                        <div>
+                            © 2025 Studio Braza • fornecedor estabelecido no Brasil • faturação internacional (sem VAT da UE) • pagamento via PayPal • contato: 
+                            <a href="mailto:studiobraza@gmail.com">studiobraza@gmail.com</a>
+                        </div>
+                    <nav class="footer__nav" aria-label="Links legais">
+                        <a href="/legal/privacy.html">Política de Privacidade</a>
+                        <a href="/legal/terms.html">Termos de Serviço</a>
+                        <a href="/legal/cookies.html">Política de Cookies</a>
+                        <a href="/legal/imprint.html">Impressum (informações legais)</a>
+                        <a href="/legal/withdrawal.html">Direito de desistência (UE)</a>
+                        <a href="#" id="manage-consent-link">Rever consentimento</a>
+                    </nav>
+                </div>
+                <!-- Footer horizontal scroll arrows -->
+                <button class="footer__scroll-btn footer__scroll-btn--left" aria-label="Rolar para a esquerda">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M15 6L9 12L15 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="footer__scroll-btn footer__scroll-btn--right" aria-label="Rolar para a direita">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+        </footer>
+
+    <!-- Contact Modal -->
+    <div id="contact-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal__overlay" data-modal-close></div>
+        <div class="modal__content">
+            <div class="modal__header">
+                <h2 id="modal-title" class="modal__title">Preencha os dados e entre em contato:</h2>
+                <button class="modal__close" data-modal-close aria-label="Fechar modal">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+            </div>
+            <form class="contact-form" id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="name" class="form-label visually-hidden">Nome completo</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        class="form-input" 
+                        placeholder="Seu nome e sobrenome" 
+                        required
+                        autocomplete="name"
+                    >
+                    <span class="form-error" id="name-error" role="alert"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label visually-hidden">E-mail</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="form-input" 
+                        placeholder="Seu e-mail" 
+                        required
+                        autocomplete="email"
+                    >
+                    <span class="form-error" id="email-error" role="alert"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone" class="form-label visually-hidden">WhatsApp</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        class="form-input" 
+                        placeholder="Seu WhatsApp (opcional)" 
+                        autocomplete="tel"
+                    >
+                    <span class="form-error" id="phone-error" role="alert"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label visually-hidden">Mensagem</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        class="form-input form-textarea" 
+                        placeholder="Conte-nos sobre seu projeto (opcional)" 
+                        rows="4"
+                    ></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn--primary btn--large btn--full-width">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M22 16.92V19C22 19.5304 21.7893 20.0391 21.4142 20.4142C21.0391 20.7893 20.5304 21 20 21C16.1337 21 12.4165 19.4722 9.58318 16.6388C6.74984 13.8055 5.22204 10.0883 5.22204 6.222C5.22204 5.69156 5.43274 5.18295 5.80781 4.80788C6.18288 4.43281 6.69149 4.222 7.22193 4.222H9.30001C9.77367 4.217 10.2308 4.38484 10.5804 4.69407C10.9299 5.0033 11.1452 5.42742 11.185 5.889C11.259 6.811 11.4286 7.72301 11.69 8.611C11.8044 9.00204 11.7916 9.41978 11.6531 9.80324C11.5146 10.1867 11.2581 10.5164 10.92 10.745L9.81001 11.355C10.9135 13.6175 12.8224 15.5265 15.085 16.63L15.695 15.52C15.9236 15.1819 16.2533 14.9254 16.6368 14.7869C17.0202 14.6484 17.438 14.6356 17.829 14.75C18.717 15.0114 19.629 15.181 20.551 15.255C21.0159 15.2944 21.4417 15.5109 21.7519 15.8621C22.0621 16.2134 22.2295 16.6723 22.222 17.148L22.22 16.92H22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Entrar em contato
+                </button>
+                
+                <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+
+    <!-- Sticky CTA Bar -->
+        <div id="sticky-cta" class="sticky-cta" role="region" aria-label="Atalho para planos">
+            <button class="sticky-cta__close" aria-label="Fechar aviso" title="Fechar">✕</button>
+            <span class="sticky-cta__text">Pronto para começar?</span>
+            <a class="sticky-cta__link" href="#planos" aria-label="Ver planos">Ver planos →</a>
+        </div>
+</body>
+</html>

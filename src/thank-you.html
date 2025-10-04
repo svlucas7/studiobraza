@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigado pela sua compra | Studio Braza</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{--c1:#c1ff00;--bg:#0a0a0a;--fg:#fff;--muted:#b3b3b3}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;background:var(--bg);color:var(--fg);display:grid;place-items:center;min-height:100vh;padding:24px}
+    .card{max-width:760px;width:100%;background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:32px;text-align:center}
+    h1{font-size:2rem;line-height:1.2;margin:0 0 12px}
+    p{color:var(--muted);margin:8px 0}
+    .btn{display:inline-block;margin-top:20px;padding:12px 18px;border-radius:12px;background:var(--c1);color:#000;text-decoration:none;font-weight:700}
+    .links{margin-top:16px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+    .links a{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>Obrigado! A sua compra foi recebida.</h1>
+    <p>Enviámos um e‑mail de confirmação com os próximos passos e o link para o briefing.</p>
+    <a class="btn" href="/">Voltar ao início</a>
+    <div class="links">
+      <a href="/legal/privacy.html">Privacidade</a>
+      <a href="/legal/terms.html">Termos</a>
+      <a href="/legal/cookies.html">Cookies</a>
+      <a href="javascript:void(0)" onclick="window.__cmp && window.__cmp.open()">Rever consentimento</a>
+    </div>
+  </div>
+
+  <script>
+    // Hook simples para conversão; substituir pelo gtag real quando disponível
+    try {
+      const params = new URLSearchParams(location.search);
+      const plan = params.get('plan') || 'desconhecido';
+      if (window.gtag) {
+        gtag('event', 'purchase', {
+          currency: 'EUR',
+          value: plan === 'pro' ? 1290 : plan === 'performance' ? 790 : 490,
+          items: [{ item_id: plan, item_name: 'Plano ' + plan }]
+        });
+      } else {
+        console.log('[thank-you] purchase event', { plan });
+      }
+    } catch (e) { console.warn('conversion hook error', e); }
+  </script>
+</body>
+</html>
